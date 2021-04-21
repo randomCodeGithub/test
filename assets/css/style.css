@@ -1,0 +1,410 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 482px;
+  margin-top: 14.5%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+nav ul li {
+  margin-right: 30px;
+  margin-top: 0.6rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #6a707b;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .bg-image {
+    display: none;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+  nav {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    padding: 10px 20px 12px 20px;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav ul {
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+  }
+  nav ul li {
+    margin-right: 20px;
+    margin-top: 0.2rem;
+  }
+  .subscribe {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(../img/pineapples.png);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 58%;
+    background-repeat: no-repeat;
+    margin-top: 4.2rem;
+  }
+  .subscribe__area {
+    width: 89.2%;
+    padding: 30px 20px;
+    background-color: #fff;
+  }
+  .subscribe .social__block {
+    margin-right: 10px;
+    margin-top: 42px;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .input-email-area {
+    width: 295px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .input-email-area input[type="email"] {
+    padding-left: 15px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+  nav .logo-mobile {
+    display: none;
+  }
+  .subscribe {
+    width: 680px;
+  }
+  .subscribe__area {
+    width: 400px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 0 auto;
+  }
+  .subscribe__area .social__block {
+    margin-top: 101px;
+    margin-right: 20px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+  .input-email-area {
+    width: 663px;
+    height: 70px;
+    margin-left: -2.5rem;
+    margin-bottom: 53px;
+  }
+  .input-email-area input[type="email"] {
+    padding-left: 40px;
+    height: 70px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #131821;
+}
+
+p,
+label {
+  color: #6a707b;
+}
+
+h2,
+p {
+  font-style: normal;
+  font-weight: normal;
+}
+
+main,
+.social,
+.social__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bg-image {
+  background-image: url(../img/pineapples.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100vh;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  z-index: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.subscribe__area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe__area .social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe__area .social__block {
+  text-decoration: none;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #e3e3e4;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__area .social__block:last-child {
+  margin-right: 0;
+}
+
+.subscribe__area .social__block i {
+  opacity: 0.3;
+  color: #131821;
+}
+
+.subscribe__area .social__block:hover {
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.subscribe__area .social__block:hover.facebook {
+  background-color: #4267b2;
+}
+
+.subscribe__area .social__block:hover.insta {
+  background-color: #c13584;
+}
+
+.subscribe__area .social__block:hover.twitter {
+  background-color: #1da1f2;
+}
+
+.subscribe__area .social__block:hover.youtube {
+  background-color: #ff0000;
+}
+
+.subscribe__area .social__block:hover i {
+  color: #fff;
+  opacity: 1;
+}
+
+.subscribe__area .social__block:active.facebook {
+  background-color: #2f4a80;
+}
+
+.subscribe__area .social__block:active.insta {
+  background-color: #8f2762;
+}
+
+.subscribe__area .social__block:active.twitter {
+  background-color: #177fbf;
+}
+
+.subscribe__area .social__block:active.youtube {
+  background-color: #cc0000;
+}
+
+.subscribe__area .description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subscribe__area form .input-email-area {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 4px solid #4066a5;
+}
+
+.subscribe__area form .input-email-area button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 83px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.subscribe__area form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__area form .checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__area form .checkbox label:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.subscribe__area form .checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+.subscribe__area form .checkbox label input[type="checkbox"]:checked + .custom-checkbox,
+.subscribe__area form .checkbox label input[type="checkbox"]:checked + .custom-checkbox > i {
+  opacity: 1;
+  background-color: #4066a5;
+}
+
+.subscribe__area form .checkbox label input[type="checkbox"] + .custom-checkbox > i {
+  opacity: 0;
+}
+
+.subscribe__area form .checkbox .custom-checkbox {
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-right: 15px;
+}
+
+.subscribe__area form .checkbox .custom-checkbox i {
+  position: absolute;
+  font-size: 0.8em;
+  line-height: 0;
+  top: 50%;
+  left: 15%;
+  margin-left: 2px;
+  color: #fff;
+}
+
+.subscribe__area form label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subscribe__area form label a {
+  color: #000;
+}
+
+.subscribe__area form label a:hover {
+  color: #4066a5;
+}
+
+.subscribe__area form label a:active {
+  color: #233759;
+}
+
+.subscribe__area form input[type="email"] {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  border: 1px solid #e3e3e4;
+  border-left: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subscribe__area form input[type="email"]:hover, .subscribe__area form input[type="email"]:focus {
+  -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+          box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  border-left: 0 !important;
+}
+
+.subscribe__area form input[type="email"]:hover {
+  border: 1px solid #4066a5;
+}
+
+.subscribe__area form input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #e3e3e4;
+}
+/*# sourceMappingURL=style.css.map */
